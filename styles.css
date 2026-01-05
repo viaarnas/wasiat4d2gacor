@@ -162,3 +162,36 @@ body {
   line-height: 1.6;
   text-align: center;
 }
+
+table, th, tr, td {
+  border: 2px solid #ffea75;
+  border-spacing: 0;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.first-row {
+  border-radius: 5px 5px 0 0;
+}
+
+.last-row1 {
+  border-radius: 0 0 0 5px;
+}
+
+.last-row2 {
+  border-radius: 0 0 5px 0;
+}
+
+.bns-type {
+  text-align: left;
+  padding-left: 10px;
+  width: 80%;
+}
+
+.chance {
+  width: 20%;
+}
