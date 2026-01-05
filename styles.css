@@ -195,3 +195,13 @@ table {
 .chance {
   width: 20%;
 }
+
+.win-notif {
+  text-align: center;
+  background: #ffea75;
+  color: red;
+  padding: 10px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+}
