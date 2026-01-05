@@ -205,3 +205,12 @@ table {
   font-size: 12px;
   font-weight: 600;
 }
+
+.linkalt a {
+  text-decoration: none;
+  color: white;
+}
+
+.linkalt a:active {
+  color: red;
+}
