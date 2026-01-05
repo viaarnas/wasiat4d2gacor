@@ -78,3 +78,35 @@ window.addEventListener("DOMContentLoaded", function() {
     isConfirmed = true;
   }
 });
+
+const winner = document.getElementById("winner");
+const prizes = [
+  { text: "BONUS DEPOSIT 10%", chance: 75 },
+  { text: "BONUS NEW MEMBER 100%", chance: 20 },
+  { text: "DANA KAGET 50 RIBU", chance: 5}
+];
+
+function getRandomPrize() {
+  const rand = Math.random()* 100;
+  let cumulative = 0;
+  
+  for (const prize of prizes) {
+    cumulative += prize.chance;
+    if (rand < cumulative) {
+      return prize.text;
+    }
+  }
+}
+
+function randomUserId() {
+  const names = ["andi", "budi", "rina", "siti", "agus"];
+  const name = names[Math.floor(Math.random() * names.length)];
+  const num = Math.floor(Math.random() * 900) + 100;
+  return name.slice(0, 2) + "***" + num;
+}
+
+setInterval(function() {
+  const prize = getRandomPrize();
+  const userId = randomUserId();
+  winner.textContent = `USER ${userId} Baru Saja Mendapatkan ${prize}`;
+}, 5000);
