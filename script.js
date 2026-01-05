@@ -30,6 +30,7 @@ yesBtn.addEventListener("click", function() {
   const cardId = selectedCard.id;
   localStorage.setItem("selectedCard", cardId);
   flipCard();
+  savedCard.style.background = "#00ff00";
   showNotif(cardId);
 });
 
@@ -43,21 +44,18 @@ function showNotif(cardId) {
   if (!cardId) return;
   switch(cardId) {
     case "card1":
-      card1.style.background = "#00ff00";
       notif.textContent = "Selamat, Kamu mendapatkan hadiah BONUS DEPOSIT 10% dari Kartu 1.";
       back1.textContent = "BONUS DEPOSIT 10%";
       back2.textContent = "BONUS NEW MEMBER 100%";
       back3.textContent = "SALDO DANA 50 RIBU";
       break;
     case "card2":
-      card2.style.background = "#00ff00";
       notif.textContent = "Selamat, Kamu mendapatkan hadiah BONUS DEPOSIT 10% dari Kartu 2.";
       back1.textContent = "SALDO DANA 50 RIBU";
       back2.textContent = "BONUS DEPOSIT 10%";
       back3.textContent = "BONUS NEW MEMBER 100%";
       break;
     case "card3":
-      card3.style.background = "#00ff00";
       notif.textContent = "Selamat, Kamu mendapatkan hadiah BONUS DEPOSIT 10% dari Kartu 3.";
       back1.textContent = "BONUS NEW MEMBER 100%";
       back2.textContent = "SALDO DANA 50 RIBU";
