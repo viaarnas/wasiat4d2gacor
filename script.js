@@ -30,7 +30,7 @@ yesBtn.addEventListener("click", function() {
   const cardId = selectedCard.id;
   localStorage.setItem("selectedCard", cardId);
   flipCard();
-  savedCard.style.background = "#00ff00";
+  selectedCard.style.background = "#00ff00";
   showNotif(cardId);
 });
 
