@@ -70,5 +70,6 @@ window.addEventListener("DOMContentLoaded", function() {
     flipCard();
     showNotif(savedCard);
     isConfirmed = true;
+    savedCard.style.background = "#00ff00";
   }
 });
