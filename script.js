@@ -23,6 +23,10 @@ noBtn.addEventListener("click", function() {
   modal.style.display = "none";
 });
 
+modal.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
 yesBtn.addEventListener("click", function() {
   modal.style.display = "none";
   isConfirmed = true;
