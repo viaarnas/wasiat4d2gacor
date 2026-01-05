@@ -68,8 +68,8 @@ window.addEventListener("DOMContentLoaded", function() {
   const savedCard = localStorage.getItem("selectedCard");
   if(savedCard) {
     flipCard();
+    savedCard.style.background = "#00ff00";
     showNotif(savedCard);
     isConfirmed = true;
-    selectedCard.style.background = "#00ff00";
   }
 });
