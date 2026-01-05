@@ -66,10 +66,11 @@ function showNotif(cardId) {
 
 window.addEventListener("DOMContentLoaded", function() {
   const savedCard = localStorage.getItem("selectedCard");
+  const savedCardEl = document.getElementById(savedCard);
   if(savedCard) {
     flipCard();
     showNotif(savedCard);
-    JSON.parse(savedCard).style.background = "#00ff00";
+    savedCardEl.style.background = "#00ff00";
     isConfirmed = true;
   }
 });
