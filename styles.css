@@ -69,14 +69,6 @@ body {
   transform: rotateY(180deg);
 }
 
-.first-modal {
-  display: flex;
-}
-
-.first-modal .acc-btn {
-  margin-top: 15px;
-}
-
 .modal {
   display: none;
   position: fixed;
