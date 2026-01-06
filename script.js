@@ -79,6 +79,12 @@ window.addEventListener("DOMContentLoaded", function() {
     savedCardEl.style.background = "#00ff00";
     isConfirmed = true;
   }
+  const paham = document.getElementById("paham");
+  const firstModal = document.querySelector(".first-modal");
+
+  paham.addEventListener("click", function() {
+  firstModal.style.display = "none";
+});
 });
 
 const winner = document.getElementById("winner");
