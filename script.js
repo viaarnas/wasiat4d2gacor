@@ -10,6 +10,13 @@ const back1 = document.getElementById("back1");
 const back2 = document.getElementById("back2");
 const back3 = document.getElementById("back3");
 
+const paham = document.getElementById("paham");
+  const firstModal = document.querySelector(".first-modal");
+
+  paham.addEventListener("click", function() {
+  firstModal.style.display = "none";
+});
+
 card.forEach(function(card) {
   card.addEventListener("click", function() {
     if (isConfirmed)return;
@@ -79,12 +86,6 @@ window.addEventListener("DOMContentLoaded", function() {
     savedCardEl.style.background = "#00ff00";
     isConfirmed = true;
   }
-  const paham = document.getElementById("paham");
-  const firstModal = document.querySelector(".first-modal");
-
-  paham.addEventListener("click", function() {
-  firstModal.style.display = "none";
-});
 });
 
 const winner = document.getElementById("winner");
