@@ -51,7 +51,7 @@ function showNotif(cardId) {
   switch(cardId) {
     case "card1":
       notif.textContent = "Selamat, Kamu mendapatkan hadiah BONUS DEPOSIT 10% dari Kartu 1.";
-      back1.textContent = "DANA KAGET 10%";
+      back1.textContent = "BONUS DEPOSIT 10%";
       back2.textContent = "BONUS NEW MEMBER 100%";
       back3.textContent = "SALDO DANA 50 RIBU";
       break;
